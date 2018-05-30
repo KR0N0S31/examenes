@@ -1,0 +1,65 @@
+{
+  "name": "examanes",
+  "version": "1.0.0",
+  "description": "Trabajo que contiene todos los examenes realizados en la mataria de programacion 1",
+  "main": "src/index.js",
+  "scripts": {
+    "dev": "electron src/index.js",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron-forge start",
+    "package": "electron-forge package",
+    "package-linux": "electron-forge package --platform=linux --arch=x64",
+    "package-mac": "electron-forge package --platform=darwin --arch=x64",
+    "package-win32": "electron-forge package --platform=win32 --arch=ia32",
+    "package-win64": "electron-forge package --platform=win32 --arch=x64",
+    "make": "electron-forge make"
+  },
+  "keywords": [],
+  "author": "Andres Felipe Martinez Salazar",
+  "license": "ISC",
+  "dependencies": {
+    "electron-compile": "^6.4.2",
+    "electron-squirrel-startup": "^1.0.0",
+    "jquery": "^3.3.1",
+    "jquery-confirm": "^3.3.2"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-async-to-generator": "^6.24.1",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "electron-forge": "^5.2.2",
+    "electron-prebuilt-compile": "2.0.2"
+  },
+  "config": {
+    "forge": {
+      "make_targets": {
+        "win32": [
+          "squirrel"
+        ],
+        "darwin": [
+          "zip"
+        ],
+        "linux": [
+          "deb",
+          "rpm"
+        ]
+      },
+      "electronPackagerConfig": {
+        "packageManager": "npm"
+      },
+      "electronWinstallerConfig": {
+        "name": "examanes"
+      },
+      "electronInstallerDebian": {},
+      "electronInstallerRedhat": {},
+      "github_repository": {
+        "owner": "",
+        "name": ""
+      },
+      "windowsStoreConfig": {
+        "packageName": "",
+        "name": "examanes"
+      }
+    }
+  }
+}

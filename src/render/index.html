@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <link rel="stylesheet" href="../assets/css/external/bootstrap.min.css">
+        <link rel="stylesheet" href="../assets/css/external/jquery-confirm.min.css">
+        <link rel="stylesheet" href="../assets/css/main.css">
+        <link rel=icon href="../assets/img/favicon.png" sizes="16x16" type="image/png">
+    </head>
+    <body class="bg-light">
+        <div class="container mt-5">
+            <div class="row">
+                <form id="main_form" class="col-2" method="get">
+                    <div class="form-group order-column">
+                        <h2>Grupo</h2>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="grupo" id="grupo1" value="1" checked>
+                            <label class="form-check-label" for="grupo1">Grupo 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="grupo" id="grupo2" value="2">
+                            <label class="form-check-label" for="grupo2">Grupo 2</label>
+                        </div>
+                    </div>
+                    <div class="form-group order-column">
+                        <h2>Examen</h2>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="examen" id="examen1" value="1" checked>
+                            <label class="form-check-label" for="examen1">Examen 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="examen" id="examen2" value="2">
+                            <label class="form-check-label" for="examen2">Examen 2</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="examen" id="examen3" value="3">
+                            <label class="form-check-label" for="examen3">Examen 3</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="examen" id="examen4" value="4">
+                            <label class="form-check-label" for="examen4">Examen 4</label>
+                        </div>
+                    </div>
+                    <div class="form-group order-column">
+                        <h2>Punto</h2>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="punto" id="punto1" value="1" checked>
+                            <label class="form-check-label" for="punto1">Punto 1</label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="punto" id="punto2" value="2">
+                            <label class="form-check-label" for="punto2">Punto 2</label>
+                        </div>
+                        <div class="form-check form-check-inline d-none radio-hidden">
+                            <input class="form-check-input" type="radio" name="punto" id="punto3" value="3">
+                            <label class="form-check-label" for="punto3">Punto 3</label>
+                        </div>
+                        <div class="form-check form-check-inline d-none radio-hidden">
+                            <input class="form-check-input" type="radio" name="punto" id="punto4" value="4">
+                            <label class="form-check-label" for="punto4">Punto 4</label>
+                        </div>
+                    </div>
+                    <button id="submit_main" type="submit" class="btn btn-primary mb-2">Iniciar programa</button>
+                    <small id="form_errors" class="text-danger"></small>
+                </form>
+                <div class="col-10">
+                    <h1 class="title mb-3"></h1>
+                    <div id="programs">
+                        <div class="program 211"></div>
+                        <div class="program 212"></div>
+                        <div class="program 221"></div>
+                        <div class="program 222"></div>
+                        <div class="program 231"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <button id="exit_button" type="button" class="btn btn-dark">Salir</button>
+        <script>window.$ = window.jQuery = require('jquery')</script>
+        <script>require('jquery-confirm')</script>
+        <script src="../assets/js-e/bootstrap.min.js"></script>
+        <script src="../assets/js-e/popper.min.js"></script>
+        <script src="./main.js"></script>
+    </body>
+</html>
